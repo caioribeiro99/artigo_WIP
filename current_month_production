@@ -1,0 +1,4 @@
+SELECT Encerrado.Data, Sum(Encerrado.Total) AS SomaDeTotal
+FROM Encerrado
+WHERE (((Month([Encerrado]![Data]))=Month(Date())))
+GROUP BY Encerrado.Data;
